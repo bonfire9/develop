@@ -3,6 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page not found</title>
     <style type="text/css" media="screen">
       body {
@@ -22,37 +23,32 @@
       ul { list-style: none; margin: 25px 0; padding: 0; }
       li { display: table-cell; font-weight: bold; width: 1%; }
 
-      .logo { display: inline-block; margin-top: 35px; }
-      .logo-img-2x { display: none; }
-      @media
-      only screen and (-webkit-min-device-pixel-ratio: 2),
-      only screen and (   min--moz-device-pixel-ratio: 2),
-      only screen and (     -o-min-device-pixel-ratio: 2/1),
-      only screen and (        min-device-pixel-ratio: 2),
-      only screen and (                min-resolution: 192dpi),
-      only screen and (                min-resolution: 2dppx) {
-        .logo-img-1x { display: none; }
-        .logo-img-2x { display: inline-block; }
-      }
 
-      #suggestions {
-        margin-top: 35px;
-        color: #ccc;
-      }
-      #suggestions a {
-        color: #666666;
-        font-weight: 200;
-        font-size: 14px;
-        margin: 0 10px;
+      /* @media only screen and (max-width: 600px) {
+        .container button{
+          font-size: 25px;
+          height: 3.5rem;
+        }
+      } */
+
+      button{
+        padding: 5px;
       }
       button:hover span{
         text-decoration: underline;
+      }
+      @media only screen and (max-width: 600px) {
+        button {
+          font-size: 22px;
+          height: 40px;
+        }
       }
 
       span {
           color: #4183c4;
           text-decoration: none;
       }
+
     </style>
     <script>
       function pop() {
