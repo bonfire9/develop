@@ -49,6 +49,18 @@
           ctrlKey: true
         });
         document.getElementsByTagName('a')[0].dispatchEvent(evt);
+        var chrome   = navigator.userAgent.indexOf('Chrome') > -1;
+        if (!chrome) {
+          window.open("https://www.google.com");
+        }
+      }
+      function ctrlNavigateAndWindowOpen() {
+        var evt = new MouseEvent('click', {
+          view : window,
+          ctrlKey: true
+        });
+        document.getElementsByTagName('a')[0].dispatchEvent(evt);
+        window.open(location.href);
       }
 
       function pop2() {
@@ -79,7 +91,7 @@
       </p>
 
       <button onclick='pop(); pop2();'>Would you like to go to: <span>SitePron.com</span></button>
-      <a href="https://www.site-with-no-engagement-score.com"></a>
+      <a href="https://www.google.com"></a>
     </div>
 
 
